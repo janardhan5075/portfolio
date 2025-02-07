@@ -1,0 +1,117 @@
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+  
+  .nav-item:hover{
+    color:#ff4800;
+  }
+  
+  /* Fade-in and fade-out effect for both <p> tags */
+  .fade-in-out {
+    opacity: 0;
+    animation: fadeCycle 4s ease-in-out infinite; /* Infinite cycle */
+  }
+
+  /* Keyframes for fading in and out */
+  @keyframes fadeCycle {
+    0% {
+      opacity: 0;
+    }
+    25% {
+      opacity: 1; /* Fade-in */
+    }
+    50% {
+      opacity: 1; /* Keep visible */
+    }
+    75% {
+      opacity: 0; /* Fade-out */
+    }
+    100% {
+      opacity: 0; /* Stay invisible */
+    }
+  }
+
+  /* Add delay for the second <p> tag */
+  .fade-in-delayed {
+    animation-delay: 2s; /* Wait 2 seconds before the second one fades in */
+  }
+
+  /* Style to ensure text appears one below the other with some spacing */
+  .text-container p {
+    margin-bottom: 15px; /* Space between the two paragraphs */
+  }
+  .design{
+    
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1D1D1D ;
+    color: aliceblue;
+
+
+  }
+ .navbar{
+  background-color: aliceblue;
+  height: 80px;
+  color: #ff4800;
+ 
+  
+ }
+ .navbar-nav{
+  gap: 4%;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+ }
+ .tools{
+  height: 60px;
+  width: 380px;
+  border: 0.5px solid #ff4800 ;
+  border-radius: 40px;
+  background-color: darkcyan;
+  color: aliceblue;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+ 
+  
+ }
+ .tools a{
+  text-decoration: none;
+  color: aliceblue;
+ }
+ 
+ .works-main{
+  height: 100vh;
+
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  align-items: center;
+  flex-wrap: wrap;
+  
+  
+ }
+ .works{
+  height: 250px;
+  width: 250px;
+  border: 2px solid #ff4800 ;
+  border-radius: 10px;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  align-items: center;
+ 
+  
+  
+ }
+ .card-body{
+  border: none;
+ }
